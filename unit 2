@@ -1,0 +1,21 @@
+def arithmetic_operations(a, b):
+    sum_result = a + b
+    difference = a - b
+    product = a * b
+    quotient = a / b if b != 0 else None
+    return sum_result, difference, product, quotient
+
+# Input two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Call the function and get multiple return values
+sum_result, difference, product, quotient = arithmetic_operations(num1, num2)
+
+# Display the results
+print(f"The sum of {num1} and {num2} is {sum_result}")
+print(f"The difference between {num1} and {num2} is {difference}")
+print(f"The product of {num1} and {num2} is {product}")
+print(f"The quotient of {num1} divided by {num2} is {quotient}")
+
+
