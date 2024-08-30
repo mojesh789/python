@@ -35,3 +35,13 @@ else:
 
 print(message)
 
+def string_length(s):
+    length = 0
+    for char in s:
+        length += 1
+    return length
+user_string = input("Enter a string: ")
+length_of_string = string_length(user_string)
+print(f"The length of the string '{user_string}' is {length_of_string}.")
+
+
