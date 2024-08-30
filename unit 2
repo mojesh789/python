@@ -17,5 +17,21 @@ print(f"The sum of {num1} and {num2} is {sum_result}")
 print(f"The difference between {num1} and {num2} is {difference}")
 print(f"The product of {num1} and {num2} is {product}")
 print(f"The quotient of {num1} divided by {num2} is {quotient}")
+111111111111111111111111111111111111
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
 
+
+name = input("Enter your name: ")
+
+custom_greeting = input("Enter a custom greeting message (press Enter to use the default greeting): ")
+
+
+if custom_greeting:
+    message = greet(name, custom_greeting)
+else:
+    message = greet(name)
+
+
+print(message)
 
